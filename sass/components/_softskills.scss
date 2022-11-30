@@ -1,0 +1,51 @@
+
+/* іконки для списку скілс */
+
+.skill__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background);
+    border-radius: 4px;
+  }
+  
+  /* Блок з Нашими особливостями */
+  .softskills {
+    padding-top: 94px;
+    
+  }
+  
+  .skills {
+    display: flex;
+  
+  }
+  .skills__item {
+    flex-basis: calc(100% / 4);
+  }
+  
+  .skills li + li {
+    margin-left: 30px;
+  }
+  
+  .skill__name {
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.1;
+     letter-spacing: 0.03em;
+     margin-left: 0;
+     }
+  
+  .skill__discription{
+        
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: var(--other-text);
+      margin-top: 10px;
+      margin-left: 0;
+  }
