@@ -9,22 +9,35 @@
 
 .hero__block {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px; 
+    }
 }
 
 .hero__logo {
-    
-
-    width: 696px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.8;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-and-text);
+
+    @media  screen and (min-width: 480px) { 
+      width: 480px;
+     }
+
+     @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+      width: 696px;
+    } 
 }
+
 .hero__button {
   margin-top: 30px;
   padding: 10px 32px;

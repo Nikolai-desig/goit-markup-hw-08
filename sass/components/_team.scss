@@ -1,10 +1,15 @@
 .team {
     background-color: var(--team-background);
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;   
+    }
  }
+
  .team__name {
    font-weight: 700;
    font-size: 36px;
@@ -15,21 +20,41 @@
    color: var(--primary-text-color);
  }
 
-
  .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;       
+  }
  }
+
  .team__list li + li {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;       
+  }
+ }
+
+ .teammate:not(:last-child) {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;       
+  }
  }
  
  .teammate{ 
-  flex-basis: calc(100% / 4 - 30px);
+  
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-and-text);
+
+  @media screen and (min-width: 768px) {
+    .team__list > .teammate {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);  
+  }
  }
 
  .teammate__name{
@@ -43,8 +68,8 @@
 
  .teammate__card {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 24px;
  }
 
  .teammate__skill{
