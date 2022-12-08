@@ -1,8 +1,12 @@
 body {
     background-color: var(--background-and-text);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
  }
  
+body.modal-open {
+    overflow: hidden;
+}
+
  a {
      text-decoration: none;
  }

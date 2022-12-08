@@ -90,12 +90,17 @@
     justify-content: center;
   
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
   
     color: var(--other-text);
-    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.9;
+      }
+  }
   
   .check__icon {
     display: inline-block;
