@@ -17,17 +17,22 @@
             <nav class="header__nav">
                 <div class="header__mobile">
                     <a class="header__logo" href="/">Web<span class="logo__span">Studio</span></a>
-                    <button type="button" class="mobile__button is-open">
+                    <button type="button" class="mobile__button is-open"
+                    aria-expanded="false"
+                    data-menu-button
+                    >
                         <svg 
                             width="40px" 
                             height="40px"
                             aria-label="Перемикач мобільного меню"
+                            aria-controls="menu-container"
                             >
                             <use class="icon-menu" href="./images/icons.svg#menu"></use>
                             <use class="icon-cross" href="./images/icons.svg#close_menu"></use>
                         </svg>
                     </button>
                 </div>
+                <div class="header__menu-mobile" data-menu>
                     <ul class="header__pages list">
                         <li class="header__page"><a href="./index.html" class="header__link current">Студія</a></li>
                         <li class="header__page"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
@@ -54,6 +59,7 @@
                         <li class="header__links-link"><a href="">Facebook<p class="links__line">|</p></a></li>
                         <li class="header__links-link"><a href="">Linkedin</a class="links__line"></li>
                     </ul>
+                </div>    
             </nav>
 
         </div>    

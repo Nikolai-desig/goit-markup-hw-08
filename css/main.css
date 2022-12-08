@@ -1757,6 +1757,18 @@ header {
   }
 }
 
+.header__menu-mobile {
+  display: contents;
+}
+.header__menu-mobile.is-open {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .header__menu-mobile {
+    display: none;
+  }
+}
+
 .mobile__button {
   padding: 0;
   margin: 0;
@@ -1772,14 +1784,14 @@ header {
   }
 }
 
-.mobile__button .icon-cross {
+.mobile__button .icon-menu {
   display: none;
 }
 
-.mobile__button.is-open .icon-cross {
+.mobile__button.is-open .icon-menu {
   display: block;
 }
 
-.mobile__button.is-open .icon-menu {
+.mobile__button.is-open .icon-cross {
   display: none;
 }/*# sourceMappingURL=main.css.map */
