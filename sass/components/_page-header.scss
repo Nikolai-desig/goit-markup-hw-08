@@ -1,8 +1,20 @@
 header {
   border-bottom: 1px solid #ECECEC;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;   
@@ -21,6 +33,11 @@ header {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-text);
+
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
  }
 
  .logo__span {
@@ -91,10 +108,16 @@ header {
 
 
 .header__contacts {
-  margin-left: auto;
+
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-left: auto;
   } 
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;  
+  }
+
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
