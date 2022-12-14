@@ -2,9 +2,40 @@
     background-color: var(--block-background);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url(../images/overlay-people.jpg);
+    url(../images/background/Header\ img_mob@1x.jpg);
     background-position: center;
     background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/background/Header\ img_mob@2x.jpg);
+    }
+
+    // tablet screen
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/background/Header\ img_tab@1x.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/background/Header\ img_tab@2x.jpg);
+      }
+    }
+
+    // desctop screen
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/background/Header\ img_desc@1x.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/background/Header\ img_desc@2x.jpg);
+      }
+    }
 }
 
 .hero__block {

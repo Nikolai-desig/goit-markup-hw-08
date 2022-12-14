@@ -1,8 +1,19 @@
 .projects__list {
-    margin-top: 50px;
+    margin-top: 40px;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+
+      .projects__list > .card {
+        flex-basis: calc(100% / 2 - 30px);  
+       }
+     }
     
     @media screen and (min-width: 1200px) {
+      margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -11,6 +22,13 @@
         flex-basis: calc(100% / 3 - 30px);  
        }
      }
+   }
+
+   .project__card:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    
    }
   
 
@@ -49,18 +67,35 @@
    }
    
    .card__content {
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  
+
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      padding-right: 0;
+    }
    }
   
   /* Оверлей для карток портфоліо */
   .card__thumb {
     position: relative;
     overflow: hidden;
+
+    img {
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 370px;
+      }
+    } 
   }
   
   .card__thumb .card__discription {
@@ -69,7 +104,6 @@
     margin-top: 0;
     top: 0;
     left: 0;
-    padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
   
     transform: translateY(100%);
@@ -80,6 +114,19 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--background-and-text);
+
+    @media screen and (max-width: 767px) {
+      padding: 77px 30px;
+    }
+    
+    @media screen and (min-width: 768px) {
+      padding: 63px 24px;
+      padding-top: 49px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
   
   .card:hover .card__discription,

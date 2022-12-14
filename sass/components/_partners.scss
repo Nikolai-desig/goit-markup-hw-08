@@ -29,7 +29,12 @@
     }
    } 
 
-  
+  .partners__unit {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+
   .partners__link {
     
     display: flex;
