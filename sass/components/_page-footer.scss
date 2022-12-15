@@ -91,6 +91,14 @@
 .social {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     padding-left: 0;
@@ -105,6 +113,11 @@
    line-height: 1.1;
    letter-spacing: 0.03em;
   color: var(--background-and-text);
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 0;
