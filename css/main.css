@@ -1080,7 +1080,7 @@ header {
   letter-spacing: 0.03em;
   margin-left: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .skill__name {
     text-align: left;
   }
