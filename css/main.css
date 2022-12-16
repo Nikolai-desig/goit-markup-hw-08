@@ -665,6 +665,11 @@ header {
     width: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__logo {
+    width: 390px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__logo {
     font-size: 44px;
@@ -1539,7 +1544,7 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .social {
     padding-top: 0;
     padding-bottom: 0;
